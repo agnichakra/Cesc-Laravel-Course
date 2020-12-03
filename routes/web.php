@@ -16,3 +16,13 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::view('about', 'about');
+
+
+Route::get('/first/{id1}/{id2}', function ($id1='' , $id2='') {
+    
+    echo $id1."   ".$id2;
+    return view('welcome');
+});
+
