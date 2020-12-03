@@ -16,9 +16,15 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+Route::get('/about', function () {
+    $data['title'] = "CESC | About"; 
+    $data['test'] = "Today is friday";
+    return view('about',$data);
+});
 
+/*
 Route::view('about', 'about');
-
+Dont use it in laravel 8 */
 
 Route::get('/first/{id1}/{id2}', function ($id1='' , $id2='') {
     

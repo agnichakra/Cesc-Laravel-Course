@@ -7,13 +7,13 @@ and open the template in the editor.
 <html>
     <head>
         <meta charset="UTF-8">
-        <title></title>
+        <title>{{$title}}</title>
         
         <link rel="stylesheet" href="{{asset('includes/style.css')}}"
     </head>
     <body class="myred">
         
-        About Page....
+        About Page.... and {{$test}}
         <?php
         // put your code here
         ?>
