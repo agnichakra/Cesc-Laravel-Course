@@ -13,6 +13,8 @@ and open the template in the editor.
     </head>
     <body class="myred">
         
+        <?php echo asset('').'<br/>'.url('/'); ?>
+
         About Page.... and {{$test}}
         <?php
         // put your code here

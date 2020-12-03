@@ -11,4 +11,6 @@ and open the template in the editor.
 .myred {
     
     background-color:  #FF0000;
+    color:white;
+    font-weight: bold;
 }
