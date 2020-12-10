@@ -16,19 +16,32 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
+/* Handling a view through route*/
 Route::get('/about', function () {
-    $data['title'] = "CESC | About"; 
-    $data['test'] = "Today is friday";
-    return view('about',$data);
+    // $data['title'] = "CESC | About"; 
+    // $data['test'] = "<h1>Today is friday</h1>";
+    return view('about');
+
+
+
 });
+
+Route::post('/getfromController', 'Frontend@getFormdata');
+
+
+/* Handling a view through controller*/
+/*
+Route::get('/about', 'Frontend@showabout');
+*/
 
 /*
 Route::view('about', 'about');
 Dont use it in laravel 8 */
 
-Route::get('/first/{id1}/{id2}', function ($id1='' , $id2='') {
+Route::get('/first/{id1?}/{id2?}', function ($id1='' , $id2='') {
     
     echo $id1."   ".$id2;
     return view('welcome');
-});
+})->where('id1', '[0-9]+');
 
