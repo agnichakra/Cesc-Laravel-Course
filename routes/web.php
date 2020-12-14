@@ -20,9 +20,9 @@ Route::get('/', function () {
 
 /* Handling a view through route*/
 Route::get('/about', function () {
-    // $data['title'] = "CESC | About"; 
-    // $data['test'] = "<h1>Today is friday</h1>";
-    return view('about');
+  $data['title'] = "CESC | About"; 
+    $data['test'] = "<h1>Today is friday</h1>";
+    return view('about',$data);
 
 
 
