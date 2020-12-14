@@ -22,7 +22,7 @@ Author URL: https://technophilix.com
   <div class="container">
     <nav class="navbar navbar-expand-lg stroke">
       <h1><a class="navbar-brand mr-lg-5" href="{{url('/')}}">
-        <img src="{{asset('')}}includes/assets/images/logo.png" alt="Your logo" title="Your logo" />Save Poor
+        <img src="{{asset('')}}includes/assets/images/logo.png" alt="Your logo" title="Your logo" />CESC Course
         </a></h1>
       <!-- if logo is image enable this   
     <a class="navbar-brand" href="#index.html">
@@ -72,7 +72,7 @@ Author URL: https://technophilix.com
           <!--//search-right-->
           </li>
           <li class="align-self">
-            <a href="#donate" class="btn btn-style btn-primary ml-lg-3 mr-lg-2"><span class="fa 
+          <a href="{{asset('')}}includes/static/formvalidation.pdf" class="btn btn-style btn-primary ml-lg-3 mr-lg-2"><span class="fa 
                 fa-download mr-1"></span> Brochure</a>
           </li>
         </ul>

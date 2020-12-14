@@ -14,7 +14,8 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    $data['title'] = "Home  | CESC Course";
+    return view('welcome', $data);
 });
 
 /* Handling a view through route*/

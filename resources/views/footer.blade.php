@@ -60,8 +60,8 @@
                     </div>
                     <div class="footers14-bottom d-flex">
                         <div class="copyright">
-                            <p>© 2020 Save Poor. All rights reserved. Design by <a href="https://technophilix.com/"
-                                    target="_blank">technophilix</a></p>
+                            <p>© 2020. All rights reserved. Design by <a href="http://cdc-ju.org.in/"
+                                    target="_blank">CDC JU</a></p>
                         </div>
                       </div>
                 </div>
