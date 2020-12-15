@@ -40,9 +40,10 @@ Route::get('/about', 'Frontend@showabout');
 Route::view('about', 'about');
 Dont use it in laravel 8 */
 
-Route::get('/first/{id1?}/{id2?}', function ($id1='' , $id2='') {
+// Route::get('/first/{id1?}/{id2?}', function ($id1='' , $id2='') {
     
-    echo $id1."   ".$id2;
-    return view('welcome');
-})->where('id1', '[0-9]+');
+//     echo $id1."   ".$id2;
+//     return view('welcome');
+// })->where('id1', '[0-9]+');
 
+Route::get('/getallcust', 'Frontend@showCustomerdata');

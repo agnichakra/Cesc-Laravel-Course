@@ -4,7 +4,7 @@ To change this license header, choose License Headers in Project Properties.
 To change this template file, choose Tools | Templates
 and open the template in the editor.
 -->
-{{-- @include('header') --}}
+ @include('header') 
 
 {{-- hhhhhhhhhhhhhhhhhhhhhhhh --}}
 
@@ -63,20 +63,35 @@ aaaaaaaaaaaaaaaa
     <p>I'm looping forever.</p>
 @endwhile --}}
 
-<div class="container mt-5">
+<div class="container mt-5 mb-5">
+    @if ($errors->any())
+    <div class="alert alert-danger">
+        <ul>
+            @foreach ($errors->all() as $error)
+                <li>{{ $error }}</li>
+            @endforeach
+        </ul>
+    </div>
+   @endif 
+
+@if(Session::has('success'))
+        <div class="alert alert-success">
+            {{ Session::get('success') }}
+            @php
+                Session::forget('success');
+            @endphp
+        </div>
+ @endif
     <form method="post" action="{{ url('/getfromController')}}">
         @csrf   
-         <input type="text" name="name" >
-        <input type="text" name="age" >
-        <input type="submit" value="Submit" >
+         <input type="text" class="form-control" name="name"  placeholder="Enter name"> <br/>
+         <input type="text" class="form-control" name="email" placeholder="Enter email" > <br/>
+        <input type="text" class="form-control" name="age" placeholder="Enter your age" > <br/>
+        <input type="submit" class="btn btn-danger" value="Submit" > <br/>
         
         
           </form>
 </div> 
   
 
-
-
-
-    </body>
-</html>
+@include('footer')
