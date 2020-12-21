@@ -47,3 +47,5 @@ Dont use it in laravel 8 */
 // })->where('id1', '[0-9]+');
 
 Route::get('/getallcust', 'Frontend@showCustomerdata');
+Route::get('/getelo', 'Frontend@elo_get');
+Route::get('/webservice', 'Frontend@web_service')->name('wes');
